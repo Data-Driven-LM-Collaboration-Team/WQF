@@ -16,6 +16,7 @@
 
 中等稠密图 
 
+## pipeline 
 
 <img width="1003" height="68" alt="image" src="https://github.com/user-attachments/assets/e9c72ff9-dba8-4313-9410-6fcc5d364e02" /> 
 
