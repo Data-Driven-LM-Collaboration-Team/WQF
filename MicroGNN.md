@@ -16,7 +16,8 @@
 
 中等稠密图 
 
-只构建了单向边？？？ 
+
+<img width="1003" height="68" alt="image" src="https://github.com/user-attachments/assets/e9c72ff9-dba8-4313-9410-6fcc5d364e02" /> 
 
 ---
 **LIONESS：Linear Interpolation to Obtain Network Estimates for Single Samples**
