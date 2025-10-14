@@ -18,6 +18,7 @@
 
 ## pipeline 
 
+随机采样（30个） -> sparcc求相关性（阈值0.15） -> GNN model
 <img width="1003" height="68" alt="image" src="https://github.com/user-attachments/assets/e9c72ff9-dba8-4313-9410-6fcc5d364e02" /> 
 
 ---
