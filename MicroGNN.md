@@ -16,6 +16,9 @@
 
 中等稠密图 
 
+# GNNExplanier
+
+
 ## pipeline 
 
 **随机采样（30个） -> sparcc求相关性（阈值0.15） -> GNN model** 
