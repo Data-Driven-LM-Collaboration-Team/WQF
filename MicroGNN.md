@@ -17,6 +17,8 @@
 中等稠密图 
 
 # GNNExplanier 
+菌筛选-图构建-GNN训练-GNN解释 
+
 <img width="1029" height="348" alt="image" src="https://github.com/user-attachments/assets/4299ca5a-edc0-4099-b74e-ac9b7d9d29df" /> 
 
 **loss = pred_loss + edge_size_loss + node_size_loss + mask_ent_loss** 
