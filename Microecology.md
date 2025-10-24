@@ -1,3 +1,31 @@
+# 🧬 Microbiome CNN Classification Pipeline
+
+微生物组分类任务完整流程（C组 vs O组）。  
+目标：从 9000+ 菌相对丰度特征出发，通过合理特征处理 + CNN 分类实现有效区分。
+
+---
+
+## ✅ ToDo List
+
+### 🧹 Step 1. 数据预处理
+
+- [ ] **加载原始数据**
+  - 文件：`o.csv`, `c.csv`
+  - 格式：第一行样本名，第一列特征名（菌种）
+- [ ] **合并并打上标签**
+  - `label = 0` for O 组  
+  - `label = 1` for C 组
+
+---
+
+### 🧾 Step 2. 过滤低丰度与低频率菌
+
+- [ ] **过滤低丰度菌**
+  ```python
+  low_abundance = (df < 0.001).sum(axis=1) / df.shape[1] > 0.9
+  df = df.loc[~low_abundance]
+
+
 # 稳定相关菌群组分析
 
 本研究参考 **Cell** 期刊的分析思路：  
