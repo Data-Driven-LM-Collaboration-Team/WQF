@@ -23,5 +23,8 @@
 
 **loss = pred_loss + edge_size_loss + node_size_loss + mask_ent_loss** 
 
+<img width="515" height="379" alt="image" src="https://github.com/user-attachments/assets/88e23898-27db-4fa8-9933-7ab55b617e64" />
+
+
 
 
