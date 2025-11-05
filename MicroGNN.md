@@ -26,8 +26,10 @@
 <img width="515" height="379" alt="image" src="https://github.com/user-attachments/assets/88e23898-27db-4fa8-9933-7ab55b617e64" /> 
 
 MLP: 平均最佳准确率: 67.14% ± 2.48% 
+
 GCN: 平均最佳准确率: 61.69% ± 2.25% 
-Random Forest:
+
+Random Forest: 平均准确率: 68.85% ± 4.35%
 
 
 
