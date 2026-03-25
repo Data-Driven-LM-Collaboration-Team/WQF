@@ -1,10 +1,15 @@
 ## AutoResearch
-[人类] → 编写/修改 **program.md** → [Agent] → 读取指令 → 修改 **train.py**
-                                                         ↓
-                                               运行5分钟训练
-                                                         ↓
-                                               评估 val_bpb
-                                                         ↓
+[人类] → 编写/修改 **program.md** → [Agent] → 读取指令 → 修改 **train.py** 
+
+                                                         ↓ 
+                                                         
+                                               运行5分钟训练 
+                                               
+                                                         ↓ 
+                                                         
+                                               评估 val_bpb 
+                                               
+                                                         ↓ 
                                                [比之前好？]
                                               ↗          ↖
                                             是              否
