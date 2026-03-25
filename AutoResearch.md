@@ -1,4 +1,5 @@
-```[人类] → 编写/修改 program.md → [AI智能体] → 读取指令 → 修改 train.py
+```
+[人类] → 编写/修改 program.md → [AI智能体] → 读取指令 → 修改 train.py
                                                          ↓
                                                运行5分钟训练
                                                          ↓
