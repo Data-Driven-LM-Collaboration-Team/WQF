@@ -56,4 +56,19 @@ rtdetrv2_pytorch/configs/rtdetrv2/include/rtdetrv2_r50vd.yml
 - RTDETRTransformerv2.num_points：deformable attention 每层采样点数（影响精度/速度）。 
 - RTDETRTransformerv2.cross_attn_method：default / discrete（注意实现里 discrete 会冻结 sampling_offsets 参数：MSDeformableAttention，会明显改变可学习性）。 
 - RTDETRTransformerv2.query_select_method：default / one2many / agnostic（影响 query 选择/训练方式）。 
-- 去噪训练：num_denoising、label_noise_ratio、box_noise_scale（影响收敛与最终精度，尤其早期稳定性）。 
+- 去噪训练：num_denoising、label_noise_ratio、box_noise_scale（影响收敛与最终精度，尤其早期稳定性）。
+
+# AnomalyCLIP
+## 超参
+- epoch
+- lr
+- batch_size
+## 数据
+--image_size
+## 模型
+- features_list(选择从 ViT 的哪些层导出 patch tokens 来做局部 anomaly map)
+- feature_map_layer(从第几个导出的特征层开始参与局部 anomaly map/loss)
+
+# RF-DETR
+## Model
+Nano/Small/Medium/Large/XLarge/2XLarge
