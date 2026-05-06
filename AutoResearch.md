@@ -90,3 +90,5 @@ model.train(dataset_dir="...", aug_config={"HorizontalFlip": {"p": 0.5}})
 Nano/Small/Medium/Large/XLarge/2XLarge
 ## 训练
 epochs,batch_size,lr,lr_encoder...
+# Grounding DINO
+微调
