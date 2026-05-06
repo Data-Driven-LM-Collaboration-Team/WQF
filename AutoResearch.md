@@ -72,14 +72,14 @@ rtdetrv2_pytorch/configs/rtdetrv2/include/rtdetrv2_r50vd.yml
 # RF-DETR
 微调
 ## 数据增强
-预设的增强方案
-预设名称	最适用场景
-AUG_CONSERVATIVE	小规模数据集（500 张图像以下）
-AUG_AGGRESSIVE	大规模数据集（2000 张以上图像）
-AUG_AERIAL	卫星 / 航拍图像
-AUG_INDUSTRIAL	工业制造 / 质检数据
-自定义：几何变换、像素级变换等
-model.train(dataset_dir="...", aug_config={"HorizontalFlip": {"p": 0.5}})
+预设的增强方案 
+预设名称	最适用场景 
+AUG_CONSERVATIVE	小规模数据集（500 张图像以下） 
+AUG_AGGRESSIVE	大规模数据集（2000 张以上图像） 
+AUG_AERIAL	卫星 / 航拍图像 
+AUG_INDUSTRIAL	工业制造 / 质检数据 
+自定义：几何变换、像素级变换等 
+model.train(dataset_dir="...", aug_config={"HorizontalFlip": {"p": 0.5}}) 
 ## Model
 Nano/Small/Medium/Large/XLarge/2XLarge
 ## 训练
