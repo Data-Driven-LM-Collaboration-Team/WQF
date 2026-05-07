@@ -1,6 +1,10 @@
-框架
-工作流
-数据卡片（选择数据增强方式、模型）
+框架 
+
+工作流 
+
+数据卡片（选择数据增强方式、模型） 
+
+训练 预训练 微调
 # YOLO系列
 参考Ultralytics YOLO使用文档 https://docs.ultralytics.com/zh/modes/train/ 
 
