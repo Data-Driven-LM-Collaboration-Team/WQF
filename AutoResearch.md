@@ -1,9 +1,35 @@
-框架 
+# 框架 
 选择模型 -->  数据增强  -->  训练
 
-工作流 
+参考了 `roboflow-python` 的 `Workspace -> Project -> Version` 组织方式，所有步骤都在本地完成，不依赖在线 API。
 
-数据卡片（选择数据增强方式、模型） 
+当前 `localflow` 支持按“模型家族”选择底层实现，并统一管理：
+
+- 数据集准备
+- 离线数据增强
+- 训练
+- 评估
+- 推理
+
+- 任务类型：目前聚焦 `CV` 目标检测。
+- 数据集输入：通过显式传入 `train / val / test` 三组图片目录与标注文件（coco格式）
+- 离线增强：先对训练集做离线增强，再把处理后的数据交给模型训练流程。
+- 模型家族：当前支持 `rtdetr` 和 `rfdetr`。
+- 模型适配：不同模型家族由各自适配器负责生成配置、训练命令、评估命令和推理命令。
+
+#  Agent 
+
+Data Card ：提供数据集各种特征
+<img width="1298" height="436" alt="image" src="https://github.com/user-attachments/assets/56bbb66f-79de-4394-81d4-d6840ceab65e" />
+
+让 Agent 先用规则决策
+例如:数据集很小，优先选择微调预训练模型的方式，并且充分利用好数据增强和正则化等。 
+
+Model Card 提供模型的特征，并且让Agent先选择模型家族，再选择具体模型
+<img width="1274" height="412" alt="image" src="https://github.com/user-attachments/assets/48639c08-06c5-40dd-b641-c19e389948e1" />
+
+参数优化通过AutoResearch来完成
+
 
 训练 预训练 微调
 # YOLO系列
