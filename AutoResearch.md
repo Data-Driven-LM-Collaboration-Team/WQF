@@ -3,7 +3,7 @@
 
 参考了 `roboflow-python` 的 `Workspace -> Project -> Version` 组织方式，所有步骤都在本地完成，不依赖在线 API。
 
-当前 `localflow` 支持按“模型家族”选择底层实现，并统一管理：
+按“模型家族”选择底层实现，并统一管理：
 
 - 数据集准备
 - 离线数据增强
