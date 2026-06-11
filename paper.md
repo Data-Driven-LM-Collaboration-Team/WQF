@@ -1,3 +1,36 @@
+# 实验
+
+## Table 1. 数据集
+
+| Modality | Task                     | Dataset         | Metric         |特点  |
+| -------- | ------------------------ | --------------- | -------------- |-------------- |
+| Image    | Classification           | CIFAR-100       | Top-1 Accuracy |比coco小，但是又足够训练 |
+| Image    | Object Detection         | VisDrone        | mAP@50:95      |大量小目标、复杂背景、类别不平衡，存在研究问题 |
+| Image    | Instance Segmentation    | Oxford-IIIT Pet | mIoU           |比coco小，训练成本低 |
+| Graph    | Node Classification      | Cora            | Accuracy       |经典数据集 |
+| Graph    | Link Prediction          | OGBL-Collab     | Hits@50        |经典数据集 |
+| Graph    | Graph Classification     | MUTAG           | Accuracy       |经典数据集 |
+| Text     | Text Classification      | AG News         | Accuracy       | |
+| Text     | Named Entity Recognition | CoNLL-2003      | Entity F1      | |
+| Text     | Retrieval / Ranking      | MS MARCO        | MRR@10         | |
+
+---
+
+## Experiment 1: Performance Comparison
+
+### Table 2. Main Performance Comparison
+
+| Method            | CIFAR100 | VisDrone | Oxford Pet | Cora | OGBL-Collab | MUTAG | AG News | CoNLL-2003 | MS MARCO |
+| ----------------- | -------- | -------- | ---------- | ---- | ----------- | ----- | ------- | ---------- | -------- |
+| 人类设计模型       |          |          |            |      |             |       |         |            |          |
+| AutoML-Agent       |          |  0.363 |            |      |             |       |         |            |          |
+| AutoGluon         |          |          |            |      |             |       |         |            |          |
+| Claude Code       |          |          |            |      |             |       |         |            |          |
+| DeepAuto (Ours)   |          |          |            |      |             |       |         |            |          |
+
+---
+
+
 # 大纲
 ## 研究背景
 
