@@ -8,10 +8,10 @@
 | Method            | CIFAR-100 Top-1 Acc. ↑ | VisDrone mAP@[0.5:0.95] ↑ | Oxford-IIIT Pet mIoU ↑ |
 |------------------|------------------------|---------------------------|-------------------------|
 | Human Models     | 0.783                  | 0.251                     | 0.795                   |
-| AutoML-Agent     | 0.788                  | 0.363                     | 0.803                   |
-| AutoGluon        | 0.926                  | 0.215                     | 0.710                   |
-| Claude Code      | —                      | —                         | —                       |
-| DeepAuto (Ours)  | 0.825                  | 0.385                     | 0.814                   |
+| AutoML-Agent     | 0.788                  | *0.363*                   | *0.803*                 |
+| AutoGluon        | **0.926**              | 0.215                     | 0.710                   |
+| Claude Code      |                        |                           |                         |
+| DeepAuto (Ours)  | *0.825*                | **0.385**                 | **0.814**               |
 
 
 ## Table 2: Text and Graph Results
@@ -20,7 +20,7 @@
 |---------------------|-------------------|--------------------|------------------|---------------------------|-------------------|
 | Human Models        | —                 | —                  | —                | —                         | —                 |
 | AutoML-Agent        | —                 | —                  | —                | —                         | —                 |
-| AutoGluon / Graph AutoML | —           | —                  | —                | —                         | —                 |
+| AutoGluon           | —                 | —                  | N/A              | N/A                       | N/A               |
 | Claude Code         | —                 | —                  | —                | —                         | —                 |
 | DeepAuto (Ours)     | —                 | —                  | —                | —                         | —                 |
 
@@ -38,21 +38,6 @@
 | Text     | Named Entity Recognition | CoNLL-2003      | Entity F1      | |
 | Text     | Retrieval / Ranking      | MS MARCO        | MRR@10         | |
 
----
-
-## Experiment 1: Performance Comparison
-
-### Table 2. Main Performance Comparison
-
-| Method            | CIFAR100 | VisDrone | Oxford Pet | Cora | OGBL-Collab | MUTAG | AG News | CoNLL-2003 | MS MARCO |
-| ----------------- | -------- | -------- | ---------- | ---- | ----------- | ----- | ------- | ---------- | -------- |
-| 人类设计模型       |          |          |            |      |             |       |         |            |          |
-| AutoML-Agent       |          |  0.363 |            |      |             |       |         |            |          |
-| AutoGluon         |          |          |            |      |             |       |         |            |          |
-| Claude Code       |          |          |            |      |             |       |         |            |          |
-| DeepAuto (Ours)   |          |          |            |      |             |       |         |            |          |
-
----
 
 
 # 大纲
