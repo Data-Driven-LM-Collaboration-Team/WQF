@@ -1,4 +1,28 @@
+# 大纲
+## 3.DeepAuto 总体框架与问题定义
+### 3.1 总体框架
+
 # 实验
+## Table 1: Vision  Results
+
+| Method            | CIFAR-100 Top-1 Acc. ↑ | VisDrone mAP@[0.5:0.95] ↑ | Oxford-IIIT Pet mIoU ↑ |
+|------------------|------------------------|---------------------------|-------------------------|
+| Human Models     | 0.783                  | 0.251                     | 0.795                   |
+| AutoML-Agent     | 0.788                  | 0.363                     | 0.803                   |
+| AutoGluon        | 0.926                  | 0.215                     | 0.710                   |
+| Claude Code      | —                      | —                         | —                       |
+| DeepAuto (Ours)  | 0.825                  | 0.385                     | 0.814                   |
+
+
+## Table 2: Text and Graph Results
+
+| Method               | Ecomm Text Cls. ↑ | Entail Text Cls. ↑ | Cora Node Cls. ↑ | OGBL-Collab Link Pred. ↑ | MUTAG Graph Cls. ↑ |
+|---------------------|-------------------|--------------------|------------------|---------------------------|-------------------|
+| Human Models        | —                 | —                  | —                | —                         | —                 |
+| AutoML-Agent        | —                 | —                  | —                | —                         | —                 |
+| AutoGluon / Graph AutoML | —           | —                  | —                | —                         | —                 |
+| Claude Code         | —                 | —                  | —                | —                         | —                 |
+| DeepAuto (Ours)     | —                 | —                  | —                | —                         | —                 |
 
 ## Table 1. 数据集
 
