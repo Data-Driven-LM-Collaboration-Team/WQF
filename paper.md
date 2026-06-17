@@ -1,6 +1,22 @@
 # 大纲
-## 3.DeepAuto 总体框架与问题定义
-### 3.1 总体框架
+## Introduction
+然而，许多 LLM-based AutoML 系统仍然把 LLM 放在流程生成的位置：LLM 读取任务描述，生成一套配置或计划，然后由系统执行。这样的流程虽然提高了自动化程度，但与真实机器学习研究仍存在差距。真实研究者不会一次性决定所有配置，而是会观察数据分布和训练动态，提出关于模型行为的假设，设计控制变量的实验，在失败后分析原因，并基于证据持续调整方向。换言之，**机器学习研究是一种迭代式、证据驱动且可追踪的实验过程**。 
+
+从系统角度看，自主机器学习研究还面临一个基础问题：LLM 的研究意图必须能够被稳定执行，并且实验过程必须可复现、可观测和可审计。如果直接让 LLM 修改训练脚本，容易引入代码错误、配置不一致和结果不可复现等问题；如果只有实验平台而没有研究型 Agent，系统又会停留在工具自动化层面，无法主动解释失败、形成假设或进行研究转向。因此，下一代 AutoML 系统需要同时设计平台层和 Agent 层：平台层提供稳定的机器学习实验执行环境，Agent 层负责研究决策和证据推理。
+
+# 数据集
+## Table: Datasets and Tasks Overview
+
+| Task Type              | Dataset              | Task Description        | Evaluation Metric        |
+|------------------------|---------------------|------------------------|--------------------------|
+| Image Classification  | CIFAR-100           | 100-class image classification | Top-1 Accuracy |
+| Object Detection      | VisDrone            | Aerial object detection in drone imagery | mAP@[0.5:0.95] |
+| Image Segmentation    | Oxford-IIIT Pet     | Pixel-level semantic segmentation of pet images | mIoU |
+| Text Classification   | Ecomm Dataset       | E-commerce text category classification | Accuracy |
+| Text Classification   | Entail Dataset      | Natural language inference / entailment classification | Accuracy |
+| Node Classification   | Cora                | Citation network node classification | Accuracy |
+| Link Prediction       | OGBL-Collab        | Temporal collaboration link prediction | Hits@K / AUC |
+| Graph Classification  | MUTAG               | Molecular graph classification | Accuracy | 
 
 # 实验
 ## Table 1: Vision  Results
