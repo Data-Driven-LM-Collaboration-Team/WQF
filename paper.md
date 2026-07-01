@@ -18,7 +18,10 @@
 | Link Prediction       | OGBL-Collab        | Temporal collaboration link prediction | Hits@K / AUC |
 | Graph Classification  | MUTAG               | Molecular graph classification | Accuracy | 
 
-# 实验
+# 实验 
+<img width="938" height="390" alt="image" src="https://github.com/user-attachments/assets/b58b17da-a6cc-4cac-aeda-274d0f0962bf" /> 
+
+
 ## Table 1: Vision  Results
 
 | Method            | CIFAR-100 Top-1 Acc. ↑ | VisDrone mAP@[0.5:0.95] ↑ | Oxford-IIIT Pet mIoU ↑ |
