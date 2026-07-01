@@ -9,6 +9,14 @@
 
 （3）在 8 个数据集与 7 类任务中对 DeepAuto 进行系统验证，并通过等预算对比、消融实验和资源效率分析，评估其在多轮实验优化、失败诊断、策略修正和跨任务扩展方面的有效性。 
 
+## 相关工作
+传统自动机器学习 
+
+结合LLM的AutoML 
+
+## DeepAuto 总体框架与问题定义
+## DeepAuto Platform 
+## DeepAuto Research Agent
 
 
 # 数据集
