@@ -19,8 +19,7 @@
 | Graph Classification  | MUTAG               | Molecular graph classification | Accuracy | 
 
 # 实验 
-<img width="938" height="390" alt="image" src="https://github.com/user-attachments/assets/b58b17da-a6cc-4cac-aeda-274d0f0962bf" /> 
-
+<img width="913" height="390" alt="image" src="https://github.com/user-attachments/assets/3ecdd70f-1442-4cd9-86a4-20de2c38b254" />
 
 ## Table 1: Vision  Results
 
